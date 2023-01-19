@@ -30,6 +30,15 @@
     </ul>
 </div>
 </div>
-<script src="dom.js"></script>
+<script>
+    
+var list = document.getElementById("items");
+var listItems = list.getElementsByTagName("li");
+listItems[2].style.backgroundColor = "green";
+
+for (let i = 0; i < listItems.length; i++) {
+    listItems[i].style.fontWeight = "bold";
+}
+</script>
 </body>
 </html>
