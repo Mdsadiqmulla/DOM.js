@@ -31,14 +31,14 @@
 </div>
 </div>
 <script>
-    
-var list = document.getElementById("items");
-var listItems = list.getElementsByTagName("li");
-listItems[2].style.backgroundColor = "green";
+let headerTitle = document.getElementById('header-title');
+headerTitle.style.borderBottom = 'solid 3px #000';
+console.log(headerTitle);
+let additems = document.getElementById('main');
+additems.style.fontWeight = 'bold';
+additems.style.color = 'green';
 
-for (let i = 0; i < listItems.length; i++) {
-    listItems[i].style.fontWeight = "bold";
-}
+console.log(additems);
 </script>
 </body>
 </html>
