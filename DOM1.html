@@ -30,19 +30,17 @@
 </div>
 </div>
 <script>
-    // Add a new li element without the same class Name
-    var ul = document.getElementById("items");
-    var li = document.createElement("li");
-    li.innerHTML = "New Item";
-    ul.appendChild(li);
-    
-    //Edit the newly added li element using getElementsByClassName
-    var newItem = document.getElementsByClassName("New Item")[0];
-    newItem.innerHTML = "Edited Item by classname";
+var header = document.getElementById('main-header');
+header.style.borderBottom = 'solid 4px #000';
+var list = document.getElementById("items");
+var listItems = list.getElementsByTagName("li");
+listItems[2].style.backgroundColor = "green";
 
-    //Edit the newly added li element using getElementsByTagName
-    var newItem2 = document.getElementsByTagName("li")[4];
-    newItem2.innerHTML = "Edited Item by Tagname";
+for (let i = 0; i < listItems.length; i++) {
+    listItems[i].style.fontWeight = "bold";
+}
+
+
 </script>
 </body>
 </html>
