@@ -37,7 +37,7 @@
                 email,
                 phonenumber
             }
-            localStorage.setItem('userDetails', JSON.stringify(obj));
+            localStorage.setItem(email, JSON.stringify(object));
             showUserOnScreen(obj)
         }
         function showUserOnScreen(obj){
