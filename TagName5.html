@@ -31,19 +31,22 @@
   </div>
   </body>
 <script>
-  var list = document.getElementsByClassName("list-group")[0];
-var Sadiq = document.createElement("li");
-Sadiq.classList.add("list-group-item");
-Sadiq.innerHTML = "Sadiq";
-list.appendChild(Sadiq);
-// Give the element a class name
-// document.getElementById("header-title").className = "header-title";
+// Get element by tag name
+    var li = document.getElementsByTagName('li');
+    var liclass = document.getElementsByClassName('new-list');
+    // console.log(li);
+    // console.log(li[1]);
+    //li[1].textContent = 'Hello1';
+    // li[1].style.fontWeight = 'bold';
+    //this below style shown error we need to use loop throw items
+    //items.style.backgroundColor = '#f4f4f4'
 
-// // Select the element using the class name
-// var headerTitle = document.getElementsByClassName("header-title");
-
-// // Make changes to the element
-// headerTitle[0].innerHTML = "New Title";
+    // for(var i=0; i<li.length; i++){
+    //     li[i].style.backgroundColor = '#bbbb'
+    // }
+    liclass[0].style.backgroundColor = 'yellow';
+    for(var i=0; i<li.length; i++){
+        li[i].style.fontWeight = 'bold';
 
 </script>
 </html>
